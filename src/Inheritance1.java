@@ -1,4 +1,4 @@
-class parent{
+/*class parent{
   String name;
   void show(){
     System.out.println(name+" is a parent class");
@@ -17,5 +17,26 @@ public class Inheritance1 {
     c.address="Biratnagar";
     c.display();
     c.show();
+  }
+}
+*/class Parent{
+  String name;
+  void display(){
+    System.out.println("Name:"+name);
+  }
+}
+class Child extends Parent{
+  String address;
+  void display(){
+    System.out.println("Name:"+name);
+    System.out.println("Address:"+address);
+  }
+}
+public class Inheritance1{
+  public static void main(String[] args){
+    Child ch=new Child();
+    ch.name="Dipen";
+    ch.address="Australia";
+    ch.display();
   }
 }

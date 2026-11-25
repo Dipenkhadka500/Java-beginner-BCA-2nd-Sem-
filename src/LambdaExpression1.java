@@ -1,12 +1,12 @@
 @FunctionalInterface
 interface Calculator{
-  int add(int a,int b);
+  int add(int a, int b);
 }
 public class LambdaExpression1{
   public static void main(String[] args){
     Calculator c=(a,b) ->{
       return a+b;
     };
-    System.out.println("Addition:"+c.add(10,5));
+    System.out.println(c.add(10,5));
   }
 }
